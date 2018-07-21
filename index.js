@@ -345,6 +345,7 @@ $(function() {
     var code = result.codeResult.code
 
     if (App.lastResult !== code) {
+      $('#result').text(code)
       navigator.vibrate(200)
       App.lastResult = code
       var $node = null,
@@ -358,5 +359,6 @@ $(function() {
       $('#result_strip ul.thumbnails').prepend($node)
     }
   })
+  $('#vibrate').on('click', () => navigator.vibrate(100))
 })
 navigator.vibrate(200)
