@@ -1,3 +1,9 @@
-#interactive.viewport canvas, video {
-  float: left;
+#interactive.viewport {
+  position: relative;
+}
+
+#interactive.viewport canvas {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
