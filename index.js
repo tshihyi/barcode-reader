@@ -362,5 +362,6 @@ $(function() {
       $('#result_strip ul.thumbnails').prepend($node)
     }
   })
+  $('#vibrate').on('click', () => beep())
 })
 navigator.vibrate(200)
